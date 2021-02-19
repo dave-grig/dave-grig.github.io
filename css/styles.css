@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+body {
+    font-size: 17px;
+}
+
+*, html {
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'cocomatlight'; */
+    /* font-family: 'Asset', cursive; */
+    /* font-family: 'Wellfleet', cursive; */ 
+    font-family: 'Newsreader', serif;
+    /* font-style: italic; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.atention {
+    color: red;
+    width: 400px;
+}
+
+.nav {
+    background-color: #fff;
+}
+
+
+
+.portfolio {
+    display: flex;
+    height: 100vh;
+}
+
+.portfolio__about-author {
+    color: #fff;
+    font-size: 15px;
+    background-color: #FEDD00;
+    background-color: #440099;
+    background-color: #0091DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    position: relative;
+    z-index: 0;
+}
+
+ 
+
+.portfolio__general-info {
+    height: 100vh;
+    width: 60%;
+    background: no-repeat center center / cover url(../img/bg.jpg);
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+.about__social {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 200px;
+}
+
+.about__social-item {
+    margin: 0 10px;
+}
+
+.about__info {
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.about__photo {
+    margin-top: 40px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about__photo:hover {
+    transform: rotate3d(360deg, 0);
+}
+
+.about__name {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.about__profession {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.about__slogan {
+    margin-top: 20px;
+}
+
+.gear2 {
+    position: absolute;
+    left: 65%;
+    top: 35%;
+    z-index: 3;
+    opacity: 0.6;
+    height: 70vh;
+}
+
+.slide {
+    height: 100%;
+    font-family: 'Newsreader', serif;
+    font-style: normal;
+}
+
+.slide__heading {
+    color: #fff;
+    margin-top: 80px;
+    font-size: 24px;
+    
+}
+
+.slide__heading, .skills__skill-title {
+    color: #fff;
+   
+}
+
+.profile {
+    display: none;
+    position: relative;
+    z-index: -3;
+    padding: 0 100px;
+    margin-top: 160px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+}
+
+.profile__heading {
+    font-style: normal;
+    font-size: 28px;
+    color: #440099;
+    color: #0091DA;
+    color: #fff;
+}
+
+.profile__text {
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+
+}
+
+.experience, .education {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.experience__item {
+    display: flex;
+    align-items: center;
+}
+
+.experience__date-location {
+    display: flex;    
+}
+
+
+
+.experience__table, .education__table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    position: relative;
+    z-index: 333;
+}
+
+.experience__table-row {
+    width: 800px;
+
+}
+
+.experience__table-heading, .experience__table-data,
+.education__table-data, .education__table-heading {
+    padding: 20px 10px;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #fff;
+    width: 25%;
+    margin: 4px;
+    background-color: rgba(0, 145, 218, 0.8);
+}
+
+.experience__table-row:hover {
+    background-color: #8ABAD3;
+}
+
+.experience__icon {
+    margin-right: auto;
+}
+
+.gear3, .gear4 {
+    position: absolute;
+}
+
+.gear3 {
+    left: 84%;
+    animation: rotateLeft linear 10s infinite reverse;
+    width: 100px;
+    top: 5%;
+
+}
+
+.gear4 {
+    left: 90%;
+    /* transform: rotate(0); */
+    animation: rotateRight linear 10s infinite;
+    width: 130px;
+    top: 7%;
+}
+
+/* .education {
+    display: flex;
+} */
+
+
+
+.skills {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 555;
+}
+
+.programming-skills, .language__skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills__skill-title {
+    color: #fff;
+
+    font-size: 15px;
+}
+
+.skills__skill-progress-wrapper {
+    width: 180px;
+    background-color: #0091DA;
+    height: 15px;
+    border-radius: 30px;
+    margin: 0 10px;
+    
+}
+
+.skills__skill-progress {
+    background-color: #fff;
+    height: 100%;
+    border-radius: 30px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #000;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+.progress-html5 {
+    width: 95%;
+}
+
+.progress-css3 {
+    width: 98%;
+}
+
+.progress-bootstrap4 {
+    width: 90%;
+}
+
+.progress-sass {
+    width: 80%;
+}
+
+.progress-js {
+    width: 70%;
+}
+
+.progress-react {
+    width: 30%;
+}
+
+.progress-ecmascript6 {
+    width: 50%;
+}
+
+.progress-git {
+    width: 40%;
+}
+
+.progress-english {
+    width: 80%;
+}
+
+.progress-german {
+    width: 50%;
+}
+
+.progress-russian {
+    width: 95%;
+}
+
+.progress-armenian {
+    width: 100%;
+}
+
+@keyframes rotateLeft {
+    0% {
+        transform: rotate(55deg);
+    }
+
+    100% {
+        transform: rotate(415deg) ;
+    }
+}
+
+@keyframes rotateRight {
+    100% {
+       transform: rotate(360deg) ;
+    }   
+}
+
+
+
+/* .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+
+
+.nav__info, .nav__social {
+    display: flex;
+}
+
+.nav__social {
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.nav__info {
+    margin-right: 30px;
+}
+
+.nav__info-item {
+    padding-bottom: 5px;
+}
+
+.nav__info-item:hover {
+    border-bottom: 1px solid #6600a1;
+}
+
+.nav__info-link, .nav__social-link {
+    color: #6600a1;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+
+.nav__info-item, .nav__social-item {
+    margin: 0 20px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section__img {
+    margin-top: 30px;
+    width: 800px;
+    border-radius: 30px;
+} */
